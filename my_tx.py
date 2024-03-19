@@ -7,8 +7,9 @@ from rpc import acct
 tx_list = []
 page_tx_list = ["1"]
 # TODO: set page to 0
-page = 9
+page = 0
 while len(page_tx_list) > 0:
+# for i in range(1):
     page += 1
     resp = httpx.request("GET", f"https://evmapi.confluxscan.io/api?module=account&action=txlist&address={acct.address}&page={page}&offset=100&sort=desc")
     page_tx_list = resp.json()["result"]
