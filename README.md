@@ -1,9 +1,17 @@
+该脚本帮助您自动将espace测试网 cfxs 以Claim的方式转移到正式网
+
 usage/用法:
 
-pip install -r requirements.txt
+<code>pip install -r requirements.tx</code>
 
-设置私钥为环境变量，例如linux下的 export PRIVATE_KEY=<PRIVATE_KEY>
+设置私钥为环境变量，例如linux下的 
 
-或者powershell的 $Env:PRIVATE_KEY="<PRIVATE_KEY>"
+<code>export PRIVATE_KEY=<PRIVATE_KEY></code>
 
-python main.py
+或者powershell的 
+
+<code>$Env:PRIVATE_KEY="<PRIVATE_KEY>"</code>
+
+然后
+
+<code>python main.py</code>
